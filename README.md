@@ -58,11 +58,11 @@ https://github.com/jordeam/Servo_Control/tree/main
   
 
 
-
 O que o discente observou no comportamento 
 da iluminação do referido LED?
 
 Uma variação do ciclo de trabalho de PWM controlará a intensidade de cada cor (vermelho, verde, azul) e criará uma mudança de cores no LED RGB. 
+
 https://github.com/user-attachments/assets/c7582312-23b0-4826-b9cd-a8f08c6b2ca1
 
 
