@@ -12,12 +12,42 @@ Os requisitos para a realização desta atividade são:
 
    Para se fazer ciclos ativos foram empregados for (laço de repetição em C )
    ![image](https://github.com/user-attachments/assets/dd60c258-ffa0-46d7-a72a-c062d497199f)
+   ![image](https://github.com/user-attachments/assets/0ab1e186-4547-4746-8fc2-a9a918fc876b)
 
-Empregando atalhos da biblioteca hardware/pwm.h
+   e o laço utilizado foi o do{}while(1)
+   para garantia que nosso codigo mesmo que se houver erro , faça uma vez a execução
+   Nosso processo contou com duas funções, void
+   ![image](https://github.com/user-attachments/assets/5f38b697-2705-456e-9634-110aa8e27f5f)
+   ![image](https://github.com/user-attachments/assets/2b3cdea7-8f6a-4c25-873e-f401b7c0edd1)
+
+
+
+
+Empregando
   #define SERVO_PIN 22    // Define o pino GPIO onde o servo motor está conectado (pino 22).
   #define PWM_FREQ 50 //Define a frequência do PWM (50 Hz, típico para servo motores).
   #define PWM_WRAP 20000 // Define o valor máximo do contador do PWM. Esse valor é usado para configurar a largura de pulso.
   #define LED_PIN 12 // Define o pino GPIO 12, que não é usado diretamente no código, mas foi configurado como PWM.
+
+Resultados:
+No incio meu resultado no wokwi estava sem funcionar por completo e eu não conseguia entender o motivo , ele fazia 0 ---> 90 | 90---->180 |180 ---> 0 ,mas não fazia 360 graus
+![image](https://github.com/user-attachments/assets/25f3adfb-6cc2-457d-af52-927e10ca4d66)
+(imagem meramente para entendimento)
+
+até que eu percebi que tinha feito um laço a mais para tentar forçar a dar a volta mas o próprio laço que fazia ele cumprir o trageto 
+![image](https://github.com/user-attachments/assets/fda99534-d1d6-4e75-a08f-b928d392c756)
+
+abaixo um vídeo do erro que estava surgindo 
+
+https://github.com/user-attachments/assets/235b1925-722a-4ea0-8112-4340a3a30f8d
+
+depois ainda coloquei nos laços a repetição que não levava até o fim , onde considerei 90 graus e 180 graus. Mas , ao corrigir percebi o problema.
+
+e aqui está o resultado :
+
+
+https://github.com/user-attachments/assets/fe4cc1ac-422a-435a-ad8a-535c342394fc
+
 
 CONCLUSÃO
 
