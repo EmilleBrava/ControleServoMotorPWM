@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "Emille Helen",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico-w", "id": "pico", "top": 6.35, "left": 13.15, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": 17.2, "left": 172.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "servo1:V+", "pico:3V3", "red", [ "h-67.2", "v-28.7" ] ],
+    [ "servo1:GND", "pico:GND.8", "black", [ "h-38.4", "v-35.15" ] ],
+    [ "servo1:PWM", "pico:GP22", "blue", [ "h-67.2", "v32.25" ] ]
+  ],
+  "dependencies": {}
+}
